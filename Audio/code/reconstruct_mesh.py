@@ -232,7 +232,7 @@ def Reconstruction_for_render_new_given(coeff,facemodel,tex2_path):
 	return face_shape_r,face_norm_r,face_color2,tri
 
 import tensorflow as tf
-import mesh_renderer.mesh_renderer as mesh_renderer
+import mesh_renderer
 
 def Render_layer(face_shape,face_norm,face_color,facemodel,batchsize):
 

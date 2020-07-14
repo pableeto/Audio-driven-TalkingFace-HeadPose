@@ -1,0 +1,12 @@
+tensorflow-gpu==1.14.0
+torch==1.1.0
+torchvision==0.4.0
+numpy==1.16.4
+dlib==19.18.0
+opencv-contrib-python==4.1.1.26
+opencv-python==4.1.0.25
+tqdm==4.19.6
+visdom==0.1.8.9
+mxnet-cu101==1.5.0
+Pillow==4.3.0
+imageio==2.5.0

@@ -300,7 +300,7 @@ def Reconstruction_for_render_new_given2(coeff,facemodel,face_texture2):
 
 import tensorflow as tf
 #from tf_mesh_renderer import mesh_renderer
-import tf_mesh_renderer.mesh_renderer.mesh_renderer as mesh_renderer
+import mesh_renderer
 import pdb
 
 def Project_layer(face_shape):
