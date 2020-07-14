@@ -74,6 +74,6 @@ cmd = 'python train.py --dataroot %s_bmold_win3 --name memory_seq_p2p/%s --model
 os.system(cmd)
 save_each_60('checkpoints/memory_seq_p2p/%s'%n)
 
-epoch = 60
-cmd = 'python test.py --dataroot %s_bmold_win3 --name memory_seq_p2p/%s --model memory_seq --num_test 200 --epoch %d --gpu_ids %d --imagefolder images%d' % (n,n,epoch,gpu_id,epoch)
-os.system(cmd)
+# epoch = 60
+# cmd = 'python test.py --dataroot %s_bmold_win3 --name memory_seq_p2p/%s --model memory_seq --num_test 200 --epoch %d --gpu_ids %d --imagefolder images%d' % (n,n,epoch,gpu_id,epoch)
+# os.system(cmd)
