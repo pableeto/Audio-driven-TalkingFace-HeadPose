@@ -57,7 +57,7 @@ postfix = ".png"
 if not os.path.exists(mp4[:-4]):
     os.makedirs(mp4[:-4])
 count = 0
-while count<400:
+while count<length:
     cv2.imwrite("%s/frame%d%s"%(mp4[:-4],count,postfix),image)
     success, image = cap.read()
     count += 1
