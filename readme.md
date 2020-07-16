@@ -1,4 +1,19 @@
 # Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose
+This repo is a forked version from official code of "Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose"(http://arxiv.org/abs/2002.10137).
+
+## Modications (WIP)
+This forked code conducted the following modifications, making it easier for code setup and running:
+-   The original requirements provide by the authors contains a lot unnessescy libs. 
+Cleaned them up and provide a docker image that can directly run the code with all dependcies installed.
+-   The mesh renderer used in code is changed into pip package instead of manually building from sources. 
+This prevents configuring bazel and compiling tensorflow from source.
+-   Octave are used instead of matlab.
+-   Modify some bug / typo in code and refined a script that runs the whole pipeline in one.
+
+**Disclaimer**: This repo is for research purpose only and the author of this repo is not from the original paper authors.
+Please check the offical repo (see information from origin readme below) for original paper and code.
+
+# Origin readme: 
 
 We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose"(http://arxiv.org/abs/2002.10137).
 
@@ -64,7 +79,7 @@ The saved models are in `render-to-video/checkpoints/memory_seq_p2p/[person_id]`
 This process takes about 40 minutes on a Titan Xp.
 
 
-### Test on a target peron
+### Test on a target person
 Place the audio file (.wav or .mp3) for test under `Audio/audio/`.
 Run [with generated poses]
 ```bash
